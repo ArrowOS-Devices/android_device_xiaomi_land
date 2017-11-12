@@ -360,7 +360,8 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.safailnet.rc
 
 # RCS
 PRODUCT_PACKAGES += \
