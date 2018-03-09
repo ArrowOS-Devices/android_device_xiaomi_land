@@ -1090,6 +1090,7 @@
     <path name="bt-sco-mic">
     </path>
 
+<<<<<<< HEAD:audio/mixer_paths_qrd_sku1.xml
     <path name="speaker-and-bt-sco">
          <path name="speaker" />
          <path name="bt-sco-headset" />
@@ -1100,11 +1101,17 @@
          <path name="bt-sco-headset-wb" />
     </path>
 
+=======
+>>>>>>> 9c00bf7... land: audio: Properly route speaker & bt-sco device:audio/mixer_paths.xml
     <path name="bt-sco-headset-wb">
     </path>
 
     <path name="bt-sco-mic-wb">
     </path>
+<<<<<<< HEAD:audio/mixer_paths_qrd_sku1.xml
+=======
+
+>>>>>>> 9c00bf7... land: audio: Properly route speaker & bt-sco device:audio/mixer_paths.xml
     <path name="usb-headset-mic">
     </path>
 
