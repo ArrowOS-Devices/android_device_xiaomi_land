@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
-    Copyright (c) 2015-2016 The Linux Foundation. All rights reserved.
+    Copyright (c) 2015-2016, 2018, The Linux Foundation. All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -388,6 +388,12 @@
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia7" value="1" />
     </path>
 
+    <path name="compress-offload-playback2 bt-sco-wb">
+        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
+        <path name="compress-offload-playback2 bt-sco" />
+    </path>
+
+    <!-- speaker & bt-sco combo -->
     <path name="compress-offload-playback2 speaker-and-bt-sco">
          <path name="compress-offload-playback2 bt-sco" />
          <path name="compress-offload-playback2" />
@@ -414,6 +420,12 @@
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia10" value="1" />
     </path>
 
+    <path name="compress-offload-playback3 bt-sco-wb">
+        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
+        <path name="compress-offload-playback3 bt-sco" />
+    </path>
+
+    <!-- speaker & bt-sco combo -->
     <path name="compress-offload-playback3 speaker-and-bt-sco">
          <path name="compress-offload-playback3 bt-sco" />
          <path name="compress-offload-playback3" />
@@ -432,6 +444,12 @@
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia11" value="1" />
     </path>
 
+    <path name="compress-offload-playback4 bt-sco-wb">
+        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
+        <path name="compress-offload-playback4 bt-sco" />
+    </path>
+
+    <!-- speaker & bt-sco combo -->
     <path name="compress-offload-playback4 speaker-and-bt-sco">
          <path name="compress-offload-playback4 bt-sco" />
          <path name="compress-offload-playback4" />
@@ -450,6 +468,15 @@
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia12" value="1" />
     </path>
 
+<<<<<<< HEAD:audio/mixer_paths_qrd_sku1.xml
+=======
+    <path name="compress-offload-playback5 bt-sco-wb">
+        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
+        <path name="compress-offload-playback5 bt-sco" />
+    </path>
+
+    <!-- speaker & bt-sco combo -->
+>>>>>>> ad38966... land: audio: Follow-up support for speaker+sco combo device:audio/mixer_paths.xml
     <path name="compress-offload-playback5 speaker-and-bt-sco">
          <path name="compress-offload-playback5 bt-sco" />
          <path name="compress-offload-playback5" />
@@ -468,6 +495,12 @@
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia13" value="1" />
     </path>
 
+    <path name="compress-offload-playback6 bt-sco-wb">
+        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
+        <path name="compress-offload-playback6 bt-sco" />
+    </path>
+
+    <!-- speaker & bt-sco combo -->
     <path name="compress-offload-playback6 speaker-and-bt-sco">
          <path name="compress-offload-playback6 bt-sco" />
          <path name="compress-offload-playback6" />
@@ -486,6 +519,12 @@
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia14" value="1" />
     </path>
 
+    <path name="compress-offload-playback7 bt-sco-wb">
+        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
+        <path name="compress-offload-playback7 bt-sco" />
+    </path>
+
+    <!-- speaker & bt-sco combo -->
     <path name="compress-offload-playback7 speaker-and-bt-sco">
          <path name="compress-offload-playback7 bt-sco" />
          <path name="compress-offload-playback7" />
@@ -1090,28 +1129,12 @@
     <path name="bt-sco-mic">
     </path>
 
-<<<<<<< HEAD:audio/mixer_paths_qrd_sku1.xml
-    <path name="speaker-and-bt-sco">
-         <path name="speaker" />
-         <path name="bt-sco-headset" />
-    </path>
-
-    <path name="speaker-and-bt-sco-wb">
-         <path name="speaker" />
-         <path name="bt-sco-headset-wb" />
-    </path>
-
-=======
->>>>>>> 9c00bf7... land: audio: Properly route speaker & bt-sco device:audio/mixer_paths.xml
     <path name="bt-sco-headset-wb">
     </path>
 
     <path name="bt-sco-mic-wb">
     </path>
-<<<<<<< HEAD:audio/mixer_paths_qrd_sku1.xml
-=======
 
->>>>>>> 9c00bf7... land: audio: Properly route speaker & bt-sco device:audio/mixer_paths.xml
     <path name="usb-headset-mic">
     </path>
 
