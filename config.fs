@@ -110,7 +110,7 @@ caps: NET_BIND_SERVICE BLOCK_SUSPEND WAKE_ALARM
 mode: 0755
 user: AID_SYSTEM
 group: AID_RADIO
-caps: WAKE_ALARM
+caps: NET_BIND_SERVICE BLOCK_SUSPEND WAKE_ALARM
 
 [vendor/bin/cnd]
 mode: 0755
@@ -142,11 +142,17 @@ user:  AID_GPS
 group: AID_GPS
 caps: SETUID SETGID
 
+[system/vendor/bin/loc_launcher]
+mode: 0755
+user:  AID_GPS
+group: AID_GPS
+caps: SETUID SETGID
+
 [vendor/bin/xtwifi-client]
 mode: 0755
 user:  AID_GPS
 group: AID_GPS
-caps: NET_BIND_SERVICE BLOCK_SUSPEND
+caps: NET_BIND_SERVICE BLOCK_SUSPEND WAKE_ALARM
 
 [firmware/]
 mode: 0771
