@@ -5,6 +5,9 @@ LOCAL_MODULE := android.hardware.biometrics.fingerprint@2.0-service.xiaomi_land
 LOCAL_INIT_RC := android.hardware.biometrics.fingerprint@2.0-service.xiaomi_land.rc
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE_RELATIVE_PATH := hw
+
+LOCAL_CLANG_CFLAGS += -Wno-unused-parameter
+
 LOCAL_SRC_FILES := \
     BiometricsFingerprint.cpp \
     service.cpp \
