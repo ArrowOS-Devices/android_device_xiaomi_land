@@ -13,6 +13,9 @@ value:2904
 [AID_VENDOR_ADPL_ODL]
 value:2905
 
+[AID_VENDOR_QRTR]
+value:2906
+
 [vendor/bin/wcnss_filter]
 mode: 0755
 user: AID_BLUETOOTH
@@ -176,6 +179,12 @@ group: AID_SYSTEM
 caps: 0
 
 [vendor/firmware_mnt/image/*]
+mode: 0771
+user: AID_SYSTEM
+group: AID_SYSTEM
+caps: 0
+
+[bt_firmware/]
 mode: 0771
 user: AID_SYSTEM
 group: AID_SYSTEM
