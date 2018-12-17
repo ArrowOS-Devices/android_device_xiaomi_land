@@ -192,6 +192,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.service.qti.ims.enabled=1 \
     telephony.lteOnCdmaDevice=1
 
+# Surfaceflinger
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
