@@ -47,10 +47,10 @@ ro.vendor.qti.sys.fw.bservice_age=5000
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-bluetooth.hfp.client=1 \
-qcom.bluetooth.soc=smd \
-ro.bluetooth.hfp.ver=1.7 \
-ro.qualcomm.bt.hci_transport=smd
+    bluetooth.hfp.client=1 \
+    vendor.qcom.bluetooth.soc=smd \
+    ro.bluetooth.hfp.ver=1.7 \
+    ro.qualcomm.bt.hci_transport=smd
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
