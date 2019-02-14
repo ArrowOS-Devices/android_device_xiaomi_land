@@ -141,9 +141,9 @@ ro.vendor.qti.core_ctl_max_cpu=4
 
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.use_data_netmgrd=true \
-persist.data.netmgrd.qos.enable=true \
-persist.data.mode=concurrent
+    ro.vendor.use_data_netmgrd=true \
+    persist.data.netmgrd.qos.enable=true \
+    persist.vendor.data.mode=concurrent
 
 # Nitz
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -159,36 +159,26 @@ persist.rild.nitz_short_ons_3=""
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-DEVICE_PROVISIONED=1 \
-persist.data.iwlan.enable=true \
-persist.dbg.ims_volte_enable=1 \
-persist.dbg.volte_avail_ovr=1 \
-persist.dbg.vt_avail_ovr=1 \
-persist.dbg.wfc_avail_ovr=0 \
-persist.radio.aosp_usr_pref_sel=true \
-persist.radio.apm_sim_not_pwdn=1 \
-persist.radio.calls.on.ims=0 \
-persist.radio.csvt.enabled=false \
-persist.radio.DROPSETENABLE=1 \
-persist.radio.force_on_dc=true \
-persist.radio.ignore_dom_time=5 \
-persist.radio.hw_mbn_update=0 \
-persist.radio.jbims=0 \
-persist.radio.mt_sms_ack=20 \
-persist.radio.multisim.config=dsds \
-persist.radio.schd.cache=3500 \
-persist.radio.sw_mbn_update=0 \
-persist.radio.videopause.mode=1 \
-persist.vendor.radio.custom_ecc=1 \
-persist.vendor.radio.rat_on=combine \
-persist.vendor.radio.sib16_support=1 \
-ril.subscription.types=NV,RUIM \
-rild.libargs=-d/dev/smd0 \
-rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
-ro.telephony.call_ring.multiple=false \
-ro.telephony.default_network=20 \
-vendor.service.qti.ims.enabled=1 \
-telephony.lteOnCdmaDevice=1
+    DEVICE_PROVISIONED=1 \
+    persist.data.iwlan.enable=true \
+    persist.dbg.ims_volte_enable=1 \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=0 \
+    persist.radio.multisim.config=dsds \
+    persist.vendor.radio.aosp_usr_pref_sel=true \
+    persist.vendor.radio.apm_sim_not_pwdn=1 \
+    persist.vendor.radio.custom_ecc=1 \
+    persist.vendor.radio.prefer_spn=1 \
+    persist.vendor.radio.rat_on=combine \
+    persist.vendor.radio.sib16_support=1 \
+    ril.subscription.types=NV,RUIM \
+    rild.libargs=-d/dev/smd0 \
+    rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+    ro.telephony.call_ring.multiple=false \
+    ro.telephony.default_network=20,20 \
+    vendor.service.qti.ims.enabled=1 \
+    telephony.lteOnCdmaDevice=1
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
