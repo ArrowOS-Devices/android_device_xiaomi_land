@@ -432,6 +432,12 @@ vendor/lib64/vendor.qti.hardware.iop@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.iop@2.0_vendor.so
 vendor/lib64/vendor.qti.hardware.perf@1.0_vendor.so
 
+# Perf - IOP - from beryllium - PKQ1.180729.001
+vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
+vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
+vendor/lib/libqti-iopd.so
+vendor/lib64/libqti-iopd.so
+
 # Peripheral manager - from marmite - OPM5.171019.017 - UOS273C
 vendor/bin/pm-proxy
 vendor/bin/pm-service
