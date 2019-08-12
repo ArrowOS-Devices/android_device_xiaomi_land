@@ -15,3 +15,7 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/arrow_land.mk
+
+COMMON_LUNCH_CHOICES := \
+    arrow_land-userdebug \
+    arrow_land-eng
