@@ -228,6 +228,7 @@ TARGET_USES_OLD_MNC_FORMAT := true
 #include device/qcom/sepolicy/sepolicy.mk
 #BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
 
 # Treble
 ENABLE_VENDOR_IMAGE := true
