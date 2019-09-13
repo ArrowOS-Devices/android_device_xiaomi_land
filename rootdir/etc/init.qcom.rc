@@ -170,13 +170,6 @@ on boot
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
-    # Goodix Fingerprint
-    chown system system /dev/goodix_fp
-    chmod 0644 /dev/goodix_fp
-
-    setprop persist.sys.fp.vendor none
-    start vendor.gx_fpd
-
     # Notification LEDs
     chown root system /sys/class/leds/red/blink
     chown root system /sys/class/leds/green/blink
@@ -622,20 +615,3 @@ on property:init.svc.surfaceflinger=restarting
     stop vendor.hwcomposer-2-1
     start vendor.hwcomposer-2-1
 
-service vendor.gx_fpd /system/vendor/bin/gx_fpd
-    class core
-    user system
-    group system drmrpc
-    disabled
-
-on property:persist.sys.fp.vendor=switchf
-    stop vendor.gx_fpd
-    setprop persist.sys.fp.vendor searchf
-    setprop ro.boot.fpsensor fpc
-    setprop ro.hardware.fingerprint searchf
-    start vendor.fps_hal
-
-on property:persist.sys.fp.vendor=goodix
-    setprop ro.boot.fpsensor gdx
-    setprop ro.hardware.fingerprint goodix
-    start vendor.fps_hal
