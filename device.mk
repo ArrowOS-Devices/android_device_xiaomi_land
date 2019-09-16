@@ -324,7 +324,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     power.qcom
-    
+
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
     android.hardware.power@1.0-service
@@ -365,9 +365,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     telephony-ext \
+    ims-ext-common_system \
     ims-ext-common
 
 PRODUCT_BOOT_JARS += \
+    ims-ext-common_system \
     telephony-ext
 
 # Sensors
