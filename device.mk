@@ -17,9 +17,6 @@
 # Inherit proprietary files
 $(call inherit-product, vendor/xiaomi/land/land-vendor.mk)
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
-
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
