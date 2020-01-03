@@ -53,7 +53,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=smd \
     ro.bluetooth.hfp.ver=1.7 \
     ro.qualcomm.bt.hci_transport=smd \
-    persist.bluetooth.bluetooth_audio_hal.disabled=true
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
