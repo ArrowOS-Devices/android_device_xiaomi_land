@@ -31,6 +31,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := arrow_land
+DEVICE_MAINTAINER := Bauuuuu
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
