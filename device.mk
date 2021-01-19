@@ -129,7 +129,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     camera.msm8937 \
     libmm-qcamera \
-    GCam
+    GCamGOPrebuilt
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4 \
